@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Admin Panel - Account System</title>
+</head>
+<body>
+    
+<!--navigation bar up-->
+
+<nav class="navbar navbar-expand-md">
+    <a class="navbar-brand" href="#">ADMIN <span style="color: #333;">PANEL</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Payments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Password</a>
+        </li>      
+      </ul>   
+      <ul class="navbar-nav navbar-right">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Welcome, User</a>
+        </li>                     
+      </ul>    
+    </div>
+  </nav>
+
+<!-- end navigation bar -->
+
+<!--header area -->
+
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10">
+					
+					<h1><span class="fa fa-cog"></span>Dashboard <small>Manage Your Work</small></h1>
+				</div>
+				<div col-md-2>
+					<div class="dropdown create">
+					  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Logout
+					  </button>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    <a class="dropdown-item" href="#">Action</a>
+					    <a class="dropdown-item" href="#">Another action</a>
+					    <a class="dropdown-item" href="#">Something else here</a>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+<!-- end header area -->
+
+<!-- breadcrumb area-->
+
+	<section id="breadcrumb">
+		<div class="container">
+			
+			<ol class="breadcrumb">
+				<li class="active">
+					Dashboard > Cashier
+				</li>
+			</ol>
+		</div>
+	</section>
+<!-- end breadcrumb area -->
+
+<!-- main section -->
+	
+	<section id="main">
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-md-3">					
+					<div class="list-group">
+					  <a href="#" class="list-group-item list-group-item-action active main-color-bg">
+					    <span class="fa fa-cog"></span> Dashboard - Cashier
+					  </a>					 
+					  <a href="#" class="list-group-item list-group-item-action"><span class="fa fa-user"></span> Add Member</a>
+					  <a href="#" class="list-group-item list-group-item-action"><span class="fa fa-plus"></span> Create Payment</a>
+					  <a href="#" class="list-group-item list-group-item-action"><span class="fa fa-list"></span> Member List</a>					  
+					</div>	
+					<div class="card" id="progressbar">						
+						<div class="card-body">
+							<h4>Disk Space used</h4>
+							<div class="progress">
+							  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+							</div>
+							<h4>Bandwidth used</h4>
+							<div class="progress">
+							  <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+							</div>
+						</div>
+					</div>									
+				</div>
+				<div class="col-md-9"> 
+					<div class="card">
+						<div class="card-header main-color-bg">
+							<h3 class="card-title">Quick Access</h3>
+						</div>
+						<div class="card-body">
+							<!--package section-->
+							<div id="articles" class="articles">  
+							  <div class="container">							    
+							    <div class="row">
+							      <div class="col-lg-4 col-md-4">							      		
+							      			<div class="package-4">							      		
+									        <i class="fa fa-user" aria-hidden="true"></i>
+									        <h4>Add Member</h4>
+									        <p>click on the button below to create a new member</p>
+									        <p><a class="btn btn-primary" href="programming.html" role="button">Click Here &raquo;</a></p>
+							        	</div>							      	
+							      </div>
+							      <div class="col-lg-4 col-md-4">
+							      <div class="package-5">
+							        <i class="fa fa-list" aria-hidden="true"></i>
+							        <h4>Member List</h4>
+							        <p>click on the button below to view all members</p>
+							        <p><a class="btn btn-primary" href="#" role="button">Click Here &raquo;</a></p>
+							        </div>
+							      </div>
+							      <div class="col-lg-4 col-md-4">
+							      <div class="package-6">
+							        <i class="fa fa-money" aria-hidden="true"></i>
+							        <h4>Payment</h4>
+							        <p>Click on the button below to access payments</p>
+							        <p><a class="btn btn-primary" href="#" role="button">Click Here &raquo;</a></p>
+							        </div>
+							      </div>							      
+							    </div>
+							  </div>
+							</div>
+							<!--End package section-->
+						</div>
+					</div>
+
+					<!-- summery overview -->
+						<div class="card">
+						<div class="card-header main-color-bg">
+							<h3 class="card-title">Summery Overview</h3>
+						</div>
+						<div class="card-body">
+							<div class="row">
+							<div class="col-md-3">
+								<div class="card dash-box">
+									<h2><span class="fa fa-user"></span> 203</h2>
+									<h4>Users</h4>
+								</div>
+							</div>	
+							<div class="col-md-3">
+								<div class="card dash-box">
+									<h2><span class="fa fa-history"></span> 123</h2>
+									<h4>Payments</h4>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="card dash-box">
+									<h2><span class="fa fa-file-text"></span> 47</h2>
+									<h4>Pages</h4>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="card dash-box">
+									<h2><span class="fa fa-money"></span> 25</h2>
+									<h4>Cash</h4>
+								</div>
+							</div>
+							</div>						
+						</div>
+					</div>
+
+					<!-- end summery overview -->
+
+					<!-- latest user table -->
+
+					<div class="card">
+						<div class="card-header main-color-bg">
+							<h3 class="card-title">Latest Members</h3>
+						</div>
+						<div class="card-body">
+							<table class="table">
+							  <thead>
+							    <tr>
+							      <th scope="col">#</th>
+							      <th scope="col">Name</th>
+							      <th scope="col">Contact</th>
+							      <th scope="col">Registered Date</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+							      <th scope="row">1</th>
+							      <td>Smith Jay</td>
+							      <td>077-254 8547</td>
+							      <td>2018-09-12</td>
+							    </tr>
+							    <tr>
+							      <th scope="row">2</th>
+							      <td>Jacob Peter</td>
+							      <td>071-854 7845</td>
+							      <td>2018-05-12</td>
+							    </tr>
+							    <tr>
+							      <th scope="row">3</th>
+							      <td>Larry Kings</td>
+							      <td>078-845 8789</td>
+							      <td>2018-04-12</td>
+							    </tr>
+							  </tbody>
+							</table>
+												
+						</div>
+					</div>
+
+					<!-- end users table-->
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+	
+<!-- end main section -->
+
+
+<!-- footer section -->
+	<footer id="footer">
+		<p>Copyright AdminPanel, &copy; 2018</p>
+	</footer>
+
+<!-- end footer section -->
+
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
